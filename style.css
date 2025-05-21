@@ -136,4 +136,41 @@ footer {
     color: #555;
 }
 
+/* Formulário */
+form {
+    background: #fff;
+    padding: 2.5rem;
+    max-width: 600px;
+    margin: 4rem auto 2rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+label {
+    display: block;
+    margin-top: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+input {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fdfdfd;
+    transition: border 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #d4af37;
+}
+
 
