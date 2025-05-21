@@ -25,7 +25,8 @@ header {
 
 .logo img {
     max-width: 140px;
-    filter: brightness(0) invert(1);
+    height: auto;
+    margin-right: 1rem;
 }
 
 nav a {
