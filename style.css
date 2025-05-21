@@ -173,4 +173,32 @@ input:focus {
     border-color: #d4af37;
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 1rem;
+    }
+
+    .vantagens {
+        flex-direction: column;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .botao {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    form {
+        padding: 2rem 1.5rem;
+    }
+}
 
