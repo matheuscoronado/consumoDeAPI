@@ -47,7 +47,19 @@ const pesquisarCep = async () => {
 
     if(cepValido(cep.value)){
         const dados = await fetch(url);
+        const addres = await dados.json();
+
+        // hasOwnProperty retorna um valor booleano indicando se o objetivo possui a propriedade especifica no parentese
+        if(addres.hasOwnProperty('erro')){
+            alert('CEP não encontrado');
+        } else {
+            preencherFormulario(addres);
+        }
     }
+}
+
+preencherFormulario = (endereco) => {
+    
 }
 
 // Função para limpar o formulário
