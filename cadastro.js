@@ -41,7 +41,14 @@ document.getElementById('telefone').addEventListener('input', function(e) {
 const eNumero = (numero) => /^[0-9]+$/.test(numero); 
 const cepValido = (cep) => cep.length == 8 && eNumero(cep);
 
+const pesquisarCep = async () => {
+    limparFormulario();
+    const url = `https://viacep.com.br/ws/${cep.value}/json/`;
 
+    if(cepValido(cep.value)){
+        const dados = await fetch(url);
+    }
+}
 
 // Função para limpar o formulário
 limparFormulario = () => {
