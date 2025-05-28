@@ -34,3 +34,19 @@ document.getElementById('telefone').addEventListener('input', function(e) {
     valor = valor.replace(/(\d)(\d{4})$/, '$1-$2');
     this.value = valor;
 });
+
+'use strict'; // Modo restrito
+
+// Verifica se o CEP é válido
+const eNumero = (numero) => /^[0-9]+$/.test(numero); 
+const cepValido = (cep) => cep.length == 8 && eNumero(cep);
+
+
+
+// Função para limpar o formulário
+limparFormulario = () => {
+    document.getElementById('rua').value = '';
+    document.getElementById('bairro').value = '';
+    document.getElementById('cidade').value = '';
+    document.getElementById('estado').value = '';
+}
