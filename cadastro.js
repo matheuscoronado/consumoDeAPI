@@ -58,7 +58,7 @@ const pesquisarCep = async () => {
     }
 }
 
-preencherFormulario = (endereco) => {
+const preencherFormulario = (endereco) => {
     document.getElementById('rua').value = endereco.logradouro;
     document.getElementById('bairro').value = endereco.bairro;
     document.getElementById('cidade').value = endereco.localidade;
@@ -66,9 +66,11 @@ preencherFormulario = (endereco) => {
 }
 
 // Função para limpar o formulário
-limparFormulario = () => {
+const limparFormulario = () => {
     document.getElementById('rua').value = '';
     document.getElementById('bairro').value = '';
     document.getElementById('cidade').value = '';
     document.getElementById('estado').value = '';
 }
+
+document.getElementById('cep').addEventListener('focusout', pesquisarCep);
